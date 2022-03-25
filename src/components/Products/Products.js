@@ -4,7 +4,7 @@ import Perfume from "../Perfume/Perfume";
 import "./Products.css";
 
 const Products = () => {
-  // set useSate
+  // set useSate product
   const [products, setProducts] = useState([]);
   // set useState for cart data
   const [cart, setCart] = useState([]);
@@ -22,15 +22,23 @@ const Products = () => {
     setCart(newCart);
   };
 
+  // handle reset cart button
+  // another method: const initialState = [];
+  const resetCart = () => {
+    setCart([]);
+  };
+
   return (
     <div>
-      {/* header */}
+      {/* header starts*/}
       <div className="header">
         <h1>The Perfume Shop</h1>
         <p>Welcome to the Fragrance World!</p>
       </div>
+      {/* header ends*/}
+
       <div className="container">
-        {/* product container */}
+        {/* product container starts */}
         <div className="product-container">
           {products.map((product) => (
             <Perfume
@@ -40,7 +48,9 @@ const Products = () => {
             ></Perfume>
           ))}
         </div>
-        {/* cart container */}
+        {/* product container ends */}
+
+        {/* cart container starts */}
         <div className="cart-container">
           <h1 className="cart-title">Selected Perfume:</h1>
           {cart.map((item) => (
@@ -48,9 +58,12 @@ const Products = () => {
           ))}
           <div>
             <button className="cart-btn-one">CHOOSE 1 FOR ME</button>
-            <button className="cart-btn-two">RESET</button>
+            <button onClick={() => resetCart()} className="cart-btn-two">
+              RESET
+            </button>
           </div>
         </div>
+        {/* cart container ends */}
       </div>
     </div>
   );
