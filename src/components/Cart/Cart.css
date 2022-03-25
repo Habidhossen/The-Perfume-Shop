@@ -9,7 +9,19 @@
   font-weight: bold;
 }
 .cart-items {
-  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.cart-items-text {
+  font-size: 14px;
+  margin-left: 5px;
+}
+.cart-items-img {
+  padding: 4px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #ff2d5b;
 }
 .cart-btn-one {
   width: 100%;
