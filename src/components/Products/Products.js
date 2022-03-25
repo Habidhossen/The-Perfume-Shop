@@ -16,7 +16,7 @@ const Products = () => {
 
   return (
     <div>
-      <div>
+      <div className="header">
         <h1>The Perfume Shop</h1>
         <p>Welcome to the Fragrance World!</p>
       </div>

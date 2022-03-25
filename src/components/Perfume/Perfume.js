@@ -6,11 +6,13 @@ const Perfume = (props) => {
 
   return (
     <div className="card">
-      <div>
+      <div className="card-image-bg">
         <img className="card-img" src={image} alt="" />
       </div>
       <h1 className="card-title">{name}</h1>
-      <p className="card-price">Price: ${price}</p>
+      <p className="card-price">
+        Price: <b>${price}</b>
+      </p>
       <button className="card-btn">Add to Cart</button>
     </div>
   );

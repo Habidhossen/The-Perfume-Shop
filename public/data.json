@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "Sauvage Elixir",
-    "price": 121.99,
-    "image": "https://www.theperfumeshop.com/medias/sys_master/front-zoom/front-zoom/11382671441950/DIOR-Extrait-de-Parfum-for-him-3348901567572-Sauvage-Elixir.jpg"
+    "name": "Gentleman Reserve Privee",
+    "price": 66.5,
+    "image": "https://www.theperfumeshop.com/medias/sys_master/front-zoom/front-zoom/11537725390878/Givenchy-Eau-de-Parfum-Spray-3274872439061-Gentleman-Reserve-Privee.jpg"
   },
   {
     "id": 2,
@@ -25,9 +25,9 @@
   },
   {
     "id": 5,
-    "name": "Gentleman Reserve Privee",
-    "price": 66.5,
-    "image": "https://www.theperfumeshop.com/medias/sys_master/front-zoom/front-zoom/11537725390878/Givenchy-Eau-de-Parfum-Spray-3274872439061-Gentleman-Reserve-Privee.jpg"
+    "name": "Sauvage Elixir",
+    "price": 121.99,
+    "image": "https://www.theperfumeshop.com/medias/sys_master/front-zoom/front-zoom/11382671441950/DIOR-Extrait-de-Parfum-for-him-3348901567572-Sauvage-Elixir.jpg"
   },
   {
     "id": 6,

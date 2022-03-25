@@ -1,4 +1,13 @@
+.header {
+  text-align: center;
+}
 .container {
+  margin: 15px;
   display: grid;
   grid-template-columns: 3fr 1fr;
+}
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
 }
