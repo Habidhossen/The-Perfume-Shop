@@ -8,6 +8,9 @@
   font-size: 24px;
   font-weight: bold;
 }
+.cart-items {
+  font-size: 18px;
+}
 .cart-btn-one {
   width: 100%;
   background-color: #a181d6;
@@ -39,4 +42,12 @@
   background-color: transparent;
   color: #4ec295;
   border: 1px solid #4ec295;
+}
+
+/* Responsiveness for mobile devices */
+@media screen and (max-width: 688px) {
+  .cart-container {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
 }
