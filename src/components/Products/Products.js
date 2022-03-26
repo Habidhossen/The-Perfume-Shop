@@ -4,7 +4,7 @@ import Perfume from "../Perfume/Perfume";
 import "./Products.css";
 
 const Products = () => {
-  // set useSate product
+  // set useSate products
   const [products, setProducts] = useState([]);
   // set useState for cart data
   const [cart, setCart] = useState([]);
@@ -25,12 +25,11 @@ const Products = () => {
   };
 
   // handle reset cart button
-  // another method: const initialState = [];
   const resetCart = () => {
     setCart([]);
   };
 
-  // random items
+  // handle random cart items
   const randomCartItems = () => {
     const randomItem = cart[Math.floor(Math.random() * cart.length)];
     setRandomCart(randomItem);
@@ -61,15 +60,21 @@ const Products = () => {
         {/* cart container starts */}
         <div className="cart-container">
           <h1 className="cart-title">Selected Perfume:</h1>
+
+          <div className="cart-random-item">
+            {/* <img className="cart-random-img" src={randomCart.image} alt="" /> */}
+            <h5 className="cart-random-text">{randomCart.name}</h5>
+            {/* <p>This is best choice for you</p> */}
+          </div>
           {/* <h5>{randomCart.name}</h5> */}
           {cart.map((item) => (
             <Cart key={item.id} item={item}></Cart>
           ))}
           <div>
-            <button onClick={randomCartItems} className="cart-btn-one">
+            <button onClick={() => randomCartItems()} className="cart-btn-one">
               CHOOSE 1 FOR ME
             </button>
-            <button onClick={resetCart} className="cart-btn-two">
+            <button onClick={() => resetCart()} className="cart-btn-two">
               RESET
             </button>
           </div>

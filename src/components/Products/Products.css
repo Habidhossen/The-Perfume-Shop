@@ -33,6 +33,24 @@
   font-size: 24px;
   font-weight: bold;
 }
+.cart-random-item {
+  display: flex;
+  align-items: center;
+  background-color: #ff2d5b;
+  color: white;
+  border-radius: 10px;
+}
+.cart-random-text {
+  font-size: 18px;
+  line-height: 8px;
+}
+.cart-random-img {
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
 
 /* Responsiveness for mobile devices */
 @media screen and (max-width: 688px) {
