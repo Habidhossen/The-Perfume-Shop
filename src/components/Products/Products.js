@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import Perfume from "../Perfume/Perfume";
+import QuestionAnswer from "../QuestionAnswer/QuestionAnswer";
 import "./Products.css";
 
 const Products = () => {
@@ -24,15 +25,16 @@ const Products = () => {
     setCart(newCart);
   };
 
-  // handle reset cart button
-  const resetCart = () => {
-    setCart([]);
-  };
-
   // handle random cart items
   const randomCartItems = () => {
     const randomItem = cart[Math.floor(Math.random() * cart.length)];
     setRandomCart(randomItem);
+  };
+
+  // handle reset cart button
+  const resetCart = () => {
+    setCart([]);
+    setRandomCart([]);
   };
 
   return (
@@ -81,6 +83,10 @@ const Products = () => {
         </div>
         {/* cart container ends */}
       </div>
+
+      {/* Question and Answer Component starts */}
+      <QuestionAnswer></QuestionAnswer>
+      {/* Question and Answer Component ends */}
     </div>
   );
 };
