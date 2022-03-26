@@ -1,3 +1,5 @@
+import { faHandPointer, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import Perfume from "../Perfume/Perfume";
@@ -74,10 +76,10 @@ const Products = () => {
           ))}
           <div>
             <button onClick={() => randomCartItems()} className="cart-btn-one">
-              CHOOSE 1 FOR ME
+              CHOOSE 1 FOR ME <FontAwesomeIcon icon={faHandPointer} />
             </button>
             <button onClick={() => resetCart()} className="cart-btn-two">
-              RESET
+              RESET <FontAwesomeIcon icon={faTrashAlt} />
             </button>
           </div>
         </div>
