@@ -30,7 +30,6 @@ const Products = () => {
   // handle random cart items
   const randomCartItems = () => {
     const randomItem = cart[Math.floor(Math.random() * cart.length)];
-    console.log(randomItem);
     setRandomCart(randomItem);
   };
 
