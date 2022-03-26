@@ -62,13 +62,13 @@ const Products = () => {
         {/* cart container starts */}
         <div className="cart-container">
           <h1 className="cart-title">Selected Perfume:</h1>
+          <hr />
 
-          <div className="cart-random-item">
-            {/* <img className="cart-random-img" src={randomCart.image} alt="" /> */}
-            <h5 className="cart-random-text">{randomCart.name}</h5>
-            {/* <p>This is best choice for you</p> */}
+          {/* cart random item */}
+          <div>
+            <h5 className="cart-random-text">{randomCart.name} </h5>
           </div>
-          {/* <h5>{randomCart.name}</h5> */}
+
           {cart.map((item) => (
             <Cart key={item.id} item={item}></Cart>
           ))}
