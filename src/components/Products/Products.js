@@ -11,7 +11,7 @@ const Products = () => {
   const [products, setProducts] = useState([]);
   // set useState for cart data
   const [cart, setCart] = useState([]);
-  // new state for random num
+  // new state for random item
   const [randomCart, setRandomCart] = useState([]);
 
   // set useEffect
@@ -30,6 +30,7 @@ const Products = () => {
   // handle random cart items
   const randomCartItems = () => {
     const randomItem = cart[Math.floor(Math.random() * cart.length)];
+    console.log(randomItem);
     setRandomCart(randomItem);
   };
 
